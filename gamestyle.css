@@ -1,0 +1,7 @@
+* { box-sizing: border-box; }
+body { font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background-color: #9dc6da; }
+.container { text-align: center; }
+.board { display: grid; grid-template-columns: repeat(3, 100px); grid-template-rows: repeat(3, 100px); gap: 5px; margin: 20px auto; }
+.cell { width: 100px; height: 100px; background-color: #fff; border: 2px solid #333; font-size: 3rem; display: flex; align-items: center; justify-content: center; cursor: pointer; }
+.cell.taken { cursor: not-allowed; }
+button { padding: 10px 20px; font-size: 1rem; cursor: pointer; background-color: #333; color: #fff; border: none; border-radius: 5px; }
